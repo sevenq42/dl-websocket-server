@@ -11,19 +11,19 @@ var server = ws.createServer(function (conn) {
         if(msg.includes('annotations-get')) {
             conn.send(JSON.stringify([
                 {
-                    id: '' + Math.floor(Math.random() * 1000),
+                    id: '' + Math.floor(Math.random() * 1000000),
                     left: Math.random() * 200,
                     top: Math.random() * 200,
                     label: 'MyLabel from socket'
                 },
                 {
-                    id: '' + Math.floor(Math.random() * 1000),
+                    id: '' + Math.floor(Math.random() * 1000000),
                     left: Math.random() * 200,
                     top: Math.random() * 200,
                     label: 'MyLabel from socket'
                 },
                 {
-                    id: '' + Math.floor(Math.random() * 1000),
+                    id: '' + Math.floor(Math.random() * 1000000),
                     left: Math.random() * 200,
                     top: Math.random() * 200,
                     label: 'MyLabel from socket'
